@@ -33,4 +33,9 @@ cd "%user_dir%"
     echo java -jar ..\..\client\target\client-0.0.1-SNAPSHOT.jar --transaction --node "%node%" --sender "%address_hash%" --message "%%message%%" --privatekey key.priv
     echo pause
 ) > transaction.bat
+(
+    echo @echo off
+    echo java -jar ..\..\client\target\client-0.0.1-SNAPSHOT.jar --address --node "%node%" --name "%fullname%" --publickey key.pub
+    echo pause
+) > add-address.bat
 pause

@@ -29,4 +29,8 @@ cd "${user_dir}"
     echo "read message"
     echo "java -jar ../../client/target/client-0.0.1-SNAPSHOT.jar --transaction --node \"${node}\" --sender \"${address_hash}\" --message \"\${message}\" --privatekey key.priv"
 ) > transaction.sh
+(
+    echo "#!/bin/sh"
+    echo "java -jar ../../client/target/client-0.0.1-SNAPSHOT.jar --address --node \"${node}\" --name \"${fullname}\" --publickey key.pub"
+) > add-address.sh
 chmod 777 transaction.sh
