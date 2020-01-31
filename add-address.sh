@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "full username: "
 read fullname
-node="http://localhost:8080"
+read -r node < node-address.txt
 if [ ! -d users/ ]; then
     mkdir "users"
 fi

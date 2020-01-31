@@ -1,7 +1,6 @@
 #!/bin/sh
 echo "url of master node: "
 read address
-echo ${address} > masternode-address.txt
 (
     echo "package de.neozo.jblockchain.node;"
     echo

@@ -1,9 +1,6 @@
 @echo off
 set /p address="url of master node: "
 (
-    echo %address%
-) > masternode-address.txt
-(
     echo package de.neozo.jblockchain.node;
     echo:
     echo:

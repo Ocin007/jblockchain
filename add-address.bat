@@ -1,7 +1,7 @@
 @echo off
 set /p fullname="full username: "
-:: set /p node=<masternode-address.txt
-set node=http://localhost:8080
+set /p node=<node-address.txt
+:: set node=http://localhost:8080
 IF NOT EXIST users\ (
     md users
 )
